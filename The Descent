@@ -1,0 +1,24 @@
+// game loop
+while (true) {
+    var inputs = readline().split(' ');
+    var PX = parseInt(inputs[0]);
+    var PY = parseInt(inputs[1]);
+    var maxHeight = 0;
+    var target = null;
+    
+    
+    
+    for (var i = 0; i < 8; i++) {
+        var mountainH = parseInt(readline()); // represents the height of one mountain, from 9 to 0.
+        if (mountainH >= maxHeight) {
+            maxHeight = MH;
+            target = i;
+        }
+    }
+
+    if (PX == target) {
+        print("FIRE");
+    } else {
+        print('HOLD');
+    }
+}
